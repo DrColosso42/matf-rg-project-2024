@@ -42,7 +42,7 @@ struct FrameTime {
 * @brief Registers Platform events such as mouse movement, key press, window events...
 *
 */
-class PlatformController final : public core::Controller {
+class PlatformController final : public ::engine::core::Controller {
 public:
     /**
     * @brief Get the state of the @ref Key in the current frame

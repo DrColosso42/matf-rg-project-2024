@@ -44,6 +44,24 @@ public:
     */
     void destroy();
 
+    /**
+    * @brief Get the VAO ID for instanced rendering.
+    * @returns The OpenGL VAO ID.
+    */
+    uint32_t vao() const { return m_vao; }
+
+    /**
+    * @brief Get the number of indices for instanced rendering.
+    * @returns The number of indices.
+    */
+    uint32_t num_indices() const { return m_num_indices; }
+
+    /**
+    * @brief Get the textures for instanced rendering.
+    * @returns The vector of textures.
+    */
+    const std::vector<Texture *>& textures() const { return m_textures; }
+
 private:
     /**
     * @brief Constructs a Mesh object.
